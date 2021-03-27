@@ -10,6 +10,7 @@ public class Card : MonoBehaviour
     [SerializeField] private float _moveAllCardsTime = .3f;
     [SerializeField] private float _moveSingleCardTime = .01f;
     [SerializeField] private int _sortingOrderOnHover = 100;
+    [SerializeField] private float _minYPosToDrop = 5;
     [SerializeField] private GameObject _gfx;
 
     private Camera _mainCam;
@@ -73,7 +74,8 @@ public class Card : MonoBehaviour
 
     void OnMouseUp()
     {
-        transform.position = _positionBeforeDrag;
+        if(transform.localPosition.y < _minYPosToDrop)
+            transform.position = _positionBeforeDrag;
     }
  
     void OnMouseDrag()

@@ -80,6 +80,7 @@ MonoBehaviour:
   _moveAllCardsTime: 0.3
   _moveSingleCardTime: 0.01
   _sortingOrderOnHover: 100
+  _minYPosToDrop: 5
   _gfx: {fileID: 8856116017875659814}
 --- !u!61 &6949794838230735729
 BoxCollider2D:
