@@ -2,6 +2,7 @@
 {
     Properties
     {
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Factor1 ("Factor 1", float) = 1
         _Factor2 ("Factor 2", float) = 1
         _Factor3 ("Factor 3", float) = 1
