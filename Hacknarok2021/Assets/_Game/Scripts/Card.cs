@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class Card : MonoBehaviour
 {
     [SerializeField] private float _moveAllCardsBy = .5f;
@@ -11,8 +12,12 @@ public class Card : MonoBehaviour
     [SerializeField] private int _sortingOrderOnHover = 100;
     [SerializeField] private GameObject _gfx;
 
+    private Camera _mainCam;
     private SpriteRenderer _spriteRenderer;
     
+    private Vector3 _positionBeforeDrag;
+    private Vector3 _screenPoint;
+    private Vector3 _offset;
     private Vector3 _handUpPos;
     private Vector3 _handDownPos;
     
@@ -24,9 +29,10 @@ public class Card : MonoBehaviour
 
     private void Start()
     {
+        _mainCam = Camera.main;
+
         _spriteRenderer = _gfx.GetComponent<SpriteRenderer>();
         _startingSortingOrder = _spriteRenderer.sortingOrder;
-        
         
         _allCardsParent = transform.parent;
         _hand = _allCardsParent.GetComponent<Hand>();
@@ -59,6 +65,24 @@ public class Card : MonoBehaviour
         _hand.IsUp = true;
     }
 
+    void OnMouseDown()
+    {
+        _positionBeforeDrag = transform.position;
+        _offset = gameObject.transform.position - _mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z));
+    }
+
+    void OnMouseUp()
+    {
+        transform.position = _positionBeforeDrag;
+    }
+ 
+    void OnMouseDrag()
+    {
+        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z);
+        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + _offset;
+        transform.position = curPosition;
+    }
+    
     void OnMouseExit()
     {
         if(!_isOver) return;
