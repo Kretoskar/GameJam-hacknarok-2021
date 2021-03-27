@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 7324804019744468657}
   - component: {fileID: 7324804019744468656}
   m_Layer: 0
-  m_Name: TMP SubMesh [LiberationSans SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMesh [LiberationSans SDF Material]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,7 +906,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -8766477482271087447, guid: c543238b0a909044581102ba1edf8c46, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -968,15 +968,16 @@ MonoBehaviour:
     jak ty mnie. Ty kurwo jebana pierdolona, wy pisowskie \u015Bmiecie, w kurw\u0119
     jebane wy! Ja wam kurwy dam!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c543238b0a909044581102ba1edf8c46, type: 2}
+  m_sharedMaterial: {fileID: -8766477482271087447, guid: c543238b0a909044581102ba1edf8c46,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -994,7 +995,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 7.8
+  m_fontSize: 7.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
