@@ -35,7 +35,6 @@ public class NewsController : MonoBehaviour
         }
         
         _root = JsonConvert.DeserializeObject<Root>(response);
-        
         Debug.Log(_root.worldometers.food.died_of_hunger);
     }
 }

@@ -13,6 +13,7 @@ public class Card : MonoBehaviour
     [SerializeField] private float _minYPosToDrop = 5;
     [SerializeField] private GameObject _gfx;
     [SerializeField] private float _dropTime = 1;
+    [SerializeField] private GameObject _description;
 
     private DoppedCards _droppedCard;
     private Camera _mainCam;
@@ -56,6 +57,7 @@ public class Card : MonoBehaviour
     {
         if(_isOver) return;
 
+        _description.SetActive(true);
         transform.DOLocalMove(transform.localPosition + new Vector3(0,1,0), _moveSingleCardTime);
         _spriteRenderer.sortingOrder = _sortingOrderOnHover;
         
@@ -73,6 +75,7 @@ public class Card : MonoBehaviour
     {
         if(!_isOver) return;
 
+        _description.SetActive(false);
         transform.DOLocalMove(transform.localPosition + new Vector3(0,-1,0), _moveSingleCardTime);
         _spriteRenderer.sortingOrder = _startingSortingOrder;
         

@@ -2563,12 +2563,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _availableCards:
+  - {fileID: -8070298163344122224, guid: 59820a7c48248424bbb413a59beab300, type: 3}
+  - {fileID: -8070298163344122224, guid: 7ac0bc1f749ad9844af8c4d3e1724f96, type: 3}
+  - {fileID: -8070298163344122224, guid: 3eae797f9e7a61d47a4f79d774f544ae, type: 3}
+  - {fileID: -8070298163344122224, guid: 045b65d30e70c6a4781781e64733036a, type: 3}
+  - {fileID: -8070298163344122224, guid: ca491e4ac1878f141bffac503a430baa, type: 3}
   - {fileID: -8070298163344122224, guid: 92a4a319585765449aa3befd866195a7, type: 3}
-  - {fileID: -2170736445973151151, guid: 9fc71dfebda857741887ffe4a72af030, type: 3}
-  - {fileID: 5706025192001691534, guid: 09efdcdb497c60542a67160930bc623e, type: 3}
-  - {fileID: -8179576571580596568, guid: 7beb932cec37efd4faa938a0ea15dd46, type: 3}
-  - {fileID: 2138359828161625734, guid: 949664ae8a483a240be033049fd497db, type: 3}
-  - {fileID: -422636126395762353, guid: 740a30c4f0d609b4a9b2f1c36b376b38, type: 3}
   _cardTweens:
   - {fileID: 305524810}
   - {fileID: 8836386238572254511}

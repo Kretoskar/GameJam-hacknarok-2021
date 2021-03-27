@@ -1,0 +1,25 @@
+﻿public enum CardType
+{
+    TheFool,
+    TheMagician,
+    TheHighPriestess,
+    TheEmpress,
+    TheEmperor,
+    TheHierophant,
+    TheLovers,
+    TheChariot,
+    Justice,
+    TheHermit,
+    WheelOfFortune,
+    Strenght,
+    TheHangedMan,
+    Death,
+    Temperance,
+    TheDevil,
+    TheTower,
+    TheStar,
+    TheMoon,
+    TheSun,
+    Judgement,
+    TheWorld
+}
