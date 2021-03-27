@@ -12,7 +12,9 @@ public class Card : MonoBehaviour
     [SerializeField] private int _sortingOrderOnHover = 100;
     [SerializeField] private float _minYPosToDrop = 5;
     [SerializeField] private GameObject _gfx;
+    [SerializeField] private float _dropTime = 1;
 
+    private DoppedCards _droppedCard;
     private Camera _mainCam;
     private SpriteRenderer _spriteRenderer;
     
@@ -32,6 +34,7 @@ public class Card : MonoBehaviour
     {
         _mainCam = Camera.main;
 
+        _droppedCard = FindObjectOfType<DoppedCards>();
         _spriteRenderer = _gfx.GetComponent<SpriteRenderer>();
         _startingSortingOrder = _spriteRenderer.sortingOrder;
         
@@ -66,25 +69,6 @@ public class Card : MonoBehaviour
         _hand.IsUp = true;
     }
 
-    void OnMouseDown()
-    {
-        _positionBeforeDrag = transform.position;
-        _offset = gameObject.transform.position - _mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z));
-    }
-
-    void OnMouseUp()
-    {
-        if(transform.localPosition.y < _minYPosToDrop)
-            transform.position = _positionBeforeDrag;
-    }
- 
-    void OnMouseDrag()
-    {
-        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z);
-        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + _offset;
-        transform.position = curPosition;
-    }
-    
     void OnMouseExit()
     {
         if(!_isOver) return;
@@ -99,5 +83,39 @@ public class Card : MonoBehaviour
         _allCardsParent.DOMove(_handDownPos, _moveAllCardsTime);
         
         _hand.IsUp = false;
+    }
+    
+    void OnMouseDown()
+    {
+        _positionBeforeDrag = transform.position;
+        _offset = gameObject.transform.position - _mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z));
+    }
+
+    void OnMouseDrag()
+    {
+        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z);
+        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + _offset;
+        transform.position = curPosition;
+    }
+    
+    void OnMouseUp()
+    {
+        if (transform.localPosition.y < _minYPosToDrop)
+        {
+            transform.position = _positionBeforeDrag;
+        }
+        else
+        {
+            Drop();
+        }
+    }
+
+    private void Drop()
+    {
+        Transform tween = _droppedCard.DropCard();
+        transform.parent = tween.parent;
+        transform.DOMove(tween.transform.position, _dropTime);
+        transform.DOScale(tween.transform.localScale, _dropTime);
+        transform.DORotate(tween.transform.eulerAngles, _dropTime);
     }
 }
