@@ -30,9 +30,14 @@ public class DrawPile : MonoBehaviour
         for (int i = 0; i < _cardsOnHandCount; i++)
         {
             GameObject spawnedCard = Instantiate(_cardsOnHand[i].gameObject, _spawnPoint);
+            
             spawnedCard.transform.DOMove(_cardTweens[i].transform.position, _drawSingleCardTime);
             spawnedCard.transform.DOScale(_cardTweens[i].transform.localScale, _drawSingleCardTime);
             spawnedCard.transform.DORotate(_cardTweens[i].transform.eulerAngles, _drawSingleCardTime);
+            
+            spawnedCard.GetComponent<Card>().SetStartingSortingOrder(i);
+            spawnedCard.transform.position = new Vector3(spawnedCard.transform.position.x, spawnedCard.transform.position.y, i);
+            
             yield return new WaitForSeconds(_drawSingleCardTime);
         }
     }
