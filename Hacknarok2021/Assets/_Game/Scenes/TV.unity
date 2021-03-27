@@ -2563,11 +2563,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _availableCards:
-  - {fileID: -8070298163344122224, guid: 59820a7c48248424bbb413a59beab300, type: 3}
-  - {fileID: -8070298163344122224, guid: 7ac0bc1f749ad9844af8c4d3e1724f96, type: 3}
-  - {fileID: -8070298163344122224, guid: 3eae797f9e7a61d47a4f79d774f544ae, type: 3}
-  - {fileID: -8070298163344122224, guid: 045b65d30e70c6a4781781e64733036a, type: 3}
-  - {fileID: -8070298163344122224, guid: ca491e4ac1878f141bffac503a430baa, type: 3}
+  - {fileID: -8070298163344122224, guid: 9fd7c94e5e532164692982159cdfd470, type: 3}
+  - {fileID: -8070298163344122224, guid: 100c4254cb8f6db40ac2774d4bde2a2d, type: 3}
+  - {fileID: -8070298163344122224, guid: 3063b5973bf5d164f91e21787b6bd66a, type: 3}
+  - {fileID: -8070298163344122224, guid: bc07cb331adcf4949b21c017395cdbe4, type: 3}
+  - {fileID: -8070298163344122224, guid: 126451771f72c544799c2112640ce57c, type: 3}
   - {fileID: -8070298163344122224, guid: 92a4a319585765449aa3befd866195a7, type: 3}
   _cardTweens:
   - {fileID: 305524810}
