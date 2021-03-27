@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _Factor1: 27.419655
+    - _Factor1: 24.10404
     - _Factor2: 500
     - _Factor3: 1000
     m_Colors: []
