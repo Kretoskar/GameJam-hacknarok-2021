@@ -40,8 +40,10 @@ public class NewsController : MonoBehaviour
         }
         
         _root = JsonConvert.DeserializeObject<Root>(response);
-        //SetValues();
+        SetValues();
+        
         Debug.Log(_root.image_urls.Count);
+        
         foreach(var url in _root.image_urls)
         {
             StartCoroutine(DownloadImage(url));
@@ -80,8 +82,8 @@ public class NewsController : MonoBehaviour
         {
             img = ((DownloadHandlerTexture)request.downloadHandler).texture;
             sprite = Sprite.Create((Texture2D)img, new Rect(0, 0, img.width, img.height), Vector2.zero);
+            _news.NewsSprites.Add(sprite);
             spriteList.Add(sprite);
         }
-
     }
 }

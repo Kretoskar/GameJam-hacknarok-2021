@@ -6,15 +6,30 @@ using Random = UnityEngine.Random;
 
 public class News : MonoBehaviour
 {
+    [SerializeField] private List<Sprite> _newsSprites = new List<Sprite>();
     [SerializeField] private List<NewsInfo> _newsInfos;
     [SerializeField] private List<string> _plainNews = new List<string>();
 
     private List<NewsInfo> _pickedNewsInfos = new List<NewsInfo>();
     private List<string> _pickedPlainNews = new List<string>();
+    private List<Sprite> _pickedSprites = new List<Sprite>();
     
     public List<string> PlainNews => _plainNews;
 
     public List<NewsInfo> NewsInfos => _newsInfos;
+
+    public List<Sprite> NewsSprites => _newsSprites;
+
+    public List<Sprite> PickedSprites
+    {
+        get
+        {
+            if(_pickedNewsInfos.Count == 0)
+                SetupNews();
+
+            return _pickedSprites;
+        }
+    }
 
     public void SetupNews()
     {
@@ -24,6 +39,7 @@ public class News : MonoBehaviour
 
     private void GetNewsInfos()
     {
+        _pickedSprites.Clear();
         _pickedNewsInfos.Clear();
         
         for (int i = 0; i < 3; i++)
@@ -42,6 +58,7 @@ public class News : MonoBehaviour
         {
             int index = Random.Range(0, _plainNews.Count);
             _pickedPlainNews.Add(_plainNews[index]);
+            _pickedSprites.Add(_newsSprites[index]);
             _plainNews.RemoveAt(index);
         }
     }
