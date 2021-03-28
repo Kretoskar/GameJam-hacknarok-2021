@@ -1,6 +1,7 @@
 ﻿// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
 
-using Boo.Lang;
+
+using System.Collections.Generic;
 
 public class EnvironmentClimateChange
 {
