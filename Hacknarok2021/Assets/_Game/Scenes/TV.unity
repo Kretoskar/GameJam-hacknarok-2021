@@ -2761,6 +2761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _news: {fileID: 565176472}
   _droppedCards: {fileID: 1166240743}
+  _gameData: {fileID: 11400000, guid: 8396346224de1364fa055a0e2c49a05c, type: 2}
 --- !u!114 &629433817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2851,7 +2852,7 @@ MonoBehaviour:
           name: wait
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: State 5
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -3064,8 +3065,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 325.47656
-        y: 119.03125
+        x: 320.47656
+        y: 186.03906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3388,6 +3389,58 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
+    - name: State 5
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 327
+        y: 103
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: wait
       isSystemEvent: 0
@@ -3598,6 +3651,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1360480883}
   _cardParent: {fileID: 2023813207}
   _drawSingleCardTime: 0.25
+  _gameData: {fileID: 11400000, guid: 8396346224de1364fa055a0e2c49a05c, type: 2}
 --- !u!4 &921455782
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class DrawPile : MonoBehaviour
     [SerializeField] private Transform _spawnPoint = null;
     [SerializeField] private Transform _cardParent = null;
     [SerializeField] private float _drawSingleCardTime = .5f;
+    [SerializeField] private GameData _gameData = null;
      
     private int _cardsOnHandCount = 6;
     private List<Card> _cardsOnHand;
@@ -30,6 +31,8 @@ public class DrawPile : MonoBehaviour
         for (int i = 0; i < _cardsOnHandCount; i++)
         {
             GameObject spawnedCard = Instantiate(_cardsOnHand[i].gameObject, _spawnPoint);
+            
+            _gameData.AddAvailableCard(spawnedCard.GetComponent<CardInfo>().CardType);
             
             spawnedCard.transform.DOMove(_cardTweens[i].transform.position, _drawSingleCardTime);
             spawnedCard.transform.DOScale(_cardTweens[i].transform.localScale, _drawSingleCardTime);

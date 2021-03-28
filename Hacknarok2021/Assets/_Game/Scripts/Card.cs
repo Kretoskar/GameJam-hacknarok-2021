@@ -14,6 +14,7 @@ public class Card : MonoBehaviour
     [SerializeField] private GameObject _gfx;
     [SerializeField] private float _dropTime = 1;
     [SerializeField] private GameObject _description;
+    [SerializeField] private GameData _gameData = null;
 
     private DoppedCards _droppedCard;
     private Camera _mainCam;
@@ -117,6 +118,7 @@ public class Card : MonoBehaviour
 
     private void Drop()
     {
+        _gameData.RemoveAvailableCard(GetComponent<CardInfo>().CardType);
         WasDropped = true;
         Transform tween = _droppedCard.DropCard(GetComponent<CardInfo>());
         transform.parent = tween.parent;

@@ -168,6 +168,8 @@ MonoBehaviour:
   _gfx: {fileID: 3636308897919760132}
   _dropTime: 1
   _description: {fileID: 4810686383450633640}
+  _gameData: {fileID: 11400000, guid: 8396346224de1364fa055a0e2c49a05c, type: 2}
+  WasDropped: 0
 --- !u!61 &1901642757701728879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -207,11 +209,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canBeUpsideDown: 0
-  _cardType: 0
+  _cardType: 1
   _description: STRONG WILL. POSITIVE SPONTANEITY.
   _upsideDownDescription: 'WEAKNESS. LACK OF INITIATIVES. '
   _descriptionText: {fileID: 1204522614723941036}
   _gfx: {fileID: 3636308897919760132}
+  _upPolitics: 0
+  _upEnviro: 0
+  _upHealthcare: 0
+  _downPolitics: 0
+  _downEnviro: 0
+  _downHealthcare: 0
 --- !u!1 &3636308897919760132
 GameObject:
   m_ObjectHideFlags: 0
