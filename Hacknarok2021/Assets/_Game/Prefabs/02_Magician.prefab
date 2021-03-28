@@ -206,9 +206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fff7c4e21ea35441a4dc1cf7d85856e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canBeUpsideDown: 0
   _cardType: 0
   _description: STRONG WILL. POSITIVE SPONTANEITY.
-  _upsideDownDescription: WEAKNESS. LACK OF INITIATIVES. + SPECIAL RESET DAY
+  _upsideDownDescription: 'WEAKNESS. LACK OF INITIATIVES. '
   _descriptionText: {fileID: 1204522614723941036}
   _gfx: {fileID: 3636308897919760132}
 --- !u!1 &3636308897919760132

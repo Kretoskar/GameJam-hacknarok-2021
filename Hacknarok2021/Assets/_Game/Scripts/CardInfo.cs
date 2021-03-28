@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CardInfo : MonoBehaviour
 {
+    [SerializeField] private bool _canBeUpsideDown = true;
     [SerializeField] private CardType _cardType = CardType.Death;
     [SerializeField] private string _description = "";
     [SerializeField] private string _upsideDownDescription = "";
@@ -19,7 +20,10 @@ public class CardInfo : MonoBehaviour
 
     private void Start()
     {
-        _upsideDown = UnityEngine.Random.Range(0, 2) > .5f;
+        if (_canBeUpsideDown)
+            _upsideDown = UnityEngine.Random.Range(0, 2) > .5f;
+        else
+            _upsideDown = false;
         
         _descriptionText.text = _upsideDown ? _upsideDownDescription : _description;
         
