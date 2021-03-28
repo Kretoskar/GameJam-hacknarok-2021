@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -31,6 +32,27 @@ public class News : MonoBehaviour
         }
     }
 
+    public void ChangeValues(int politics, int enviro, int healthCare)
+    {
+        if(_pickedNewsInfos.Count == 0)
+            SetupNews();
+        
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.PoliticsProtestsFinances))
+        {
+            newsInfo.Count += politics * 10;
+        }
+        
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.EnvironmentClimateChange))
+        {
+            newsInfo.Count += enviro * 10;
+        }
+        
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.HealthcarePandemic))
+        {
+            newsInfo.Count += healthCare * 10;
+        }
+    }
+    
     public void SetupNews()
     {
         GetNewsInfos();

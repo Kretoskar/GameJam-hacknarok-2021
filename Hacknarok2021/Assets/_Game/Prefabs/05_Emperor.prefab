@@ -168,6 +168,7 @@ MonoBehaviour:
   _gfx: {fileID: 3636308897919760132}
   _dropTime: 1
   _description: {fileID: 4810686383450633640}
+  WasDropped: 0
 --- !u!61 &1901642757701728879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206,11 +207,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fff7c4e21ea35441a4dc1cf7d85856e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canBeUpsideDown: 1
   _cardType: 0
   _description: JUSTICE GOVERNS. POSITIVE AUTHORITY.
   _upsideDownDescription: AUTHORITARISM. INCOMPETENCE. LOSS OF CONTROL.
   _descriptionText: {fileID: 1204522614723941036}
   _gfx: {fileID: 3636308897919760132}
+  _upPolitics: 30
+  _upEnviro: 10
+  _upHealthcare: 0
+  _downPolitics: -35
+  _downEnviro: -20
+  _downHealthcare: -10
 --- !u!1 &3636308897919760132
 GameObject:
   m_ObjectHideFlags: 0

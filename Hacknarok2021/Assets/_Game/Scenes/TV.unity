@@ -2075,6 +2075,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2089368879}
+  - {fileID: 629433815}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2621,6 +2622,9 @@ MonoBehaviour:
     With Scores Shot Dead","Myanmar security forces kill at least 90 people","Myanmar
     protests: Children among 106 killed as army opens fire"]},"worldometers":{"energy":{"oil_barrels":"5,344,200"},"food":{"died_of_hunger":"1,707","money_spent_on_obesity":"33,202,177","money_spent_on_weight_loss":"10,552,827"},"government_and_economics":{"education":"585,739,689","healthcare":"861,275,840","military":"262,203,120"},"health":{"abortions":"27516","accidents":"871","cancer_deaths":"5304","suicides":"692"}}}'
   _news: {fileID: 565176472}
+  img: {fileID: 0}
+  sprite: {fileID: 0}
+  spriteList: []
 --- !u!4 &565176471
 Transform:
   m_ObjectHideFlags: 0
@@ -2647,6 +2651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6969805001ac5714296574efc3ce76cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _newsSprites: []
   _newsInfos:
   - _category: 0
     _worldometer: 5
@@ -2708,6 +2713,108 @@ MonoBehaviour:
     _description2: ' people died of hunger today.'
     _count: 0
   _plainNews: []
+--- !u!1 &629433814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629433815}
+  - component: {fileID: 629433818}
+  - component: {fileID: 629433817}
+  - component: {fileID: 629433816}
+  m_Layer: 0
+  m_Name: BedClick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629433815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629433814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.46, y: -2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 245274374}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629433816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629433814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d77bd4696090e7479c24a3c3cb1c14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _news: {fileID: 565176472}
+  _droppedCards: {fileID: 1166240743}
+--- !u!114 &629433817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629433814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9394b0b5beb0a347abf340cc6f005c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _click:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 629433816}
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _sendFSMEvent: 0
+  _fsm: {fileID: 0}
+  _fsmEvent: clicked
+--- !u!61 &629433818
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629433814}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 6}
+  m_EdgeRadius: 0
 --- !u!1 &921455780
 GameObject:
   m_ObjectHideFlags: 0

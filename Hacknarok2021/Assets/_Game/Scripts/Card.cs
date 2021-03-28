@@ -31,6 +31,8 @@ public class Card : MonoBehaviour
     private int _startingSortingOrder;
     private bool _isOver = false;
 
+    public bool WasDropped = false;
+    
     private void Start()
     {
         _mainCam = Camera.main;
@@ -115,7 +117,8 @@ public class Card : MonoBehaviour
 
     private void Drop()
     {
-        Transform tween = _droppedCard.DropCard();
+        WasDropped = true;
+        Transform tween = _droppedCard.DropCard(GetComponent<CardInfo>());
         transform.parent = tween.parent;
         transform.DOMove(tween.transform.position, _dropTime);
         transform.DOScale(tween.transform.localScale, _dropTime);
