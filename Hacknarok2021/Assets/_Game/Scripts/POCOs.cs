@@ -60,6 +60,7 @@ public class Root
 {
     public EnvironmentClimateChange environment_climate_change { get; set; }
     public HealthcarePandemic healthcare_pandemic { get; set; }
+    public List<string> image_urls { get; set; }
     public List<string> news_api { get; set; }
     public PoliticsProtestsFinance politics_protests_finance { get; set; }
     public Worldometers worldometers { get; set; }

@@ -887,7 +887,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 72.03, y: -4.436}
-  m_SizeDelta: {x: 123.89133, y: 0.5}
+  m_SizeDelta: {x: 123.89133, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7324804020410030881
 MeshRenderer:
@@ -998,10 +998,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 4.45
-  m_fontSizeBase: 36
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 1

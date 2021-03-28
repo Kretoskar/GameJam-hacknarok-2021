@@ -2555,67 +2555,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mock: '{"environment_climate_change":{"climate_change":["Climate talks will test
     Biden\u2019s pledge to make global heating a priority","John Kerry to visit India
-    in April ahead of Biden\u2019s climate summit","Climate change expected to make
-    European hay fever seasons much worse"],"environment":["As the Shift to Green
-    Energy Speeds Up, Shell\u2019s Big Natural-Gas Bet Is at Risk"]},"healthcare_pandemic":{"healthcare":[],"pandemic":["WA
-    has a new pandemic playbook, and many elements have taken authorities by surprise","A
-    2nd pandemic-era Passover prompts another round of adjusted seder plans | CBC
-    News","Mumbai Reports 6,123 Covid Cases In Highest Ever One-Day Spike","Liberals
-    under Andrew Furey win slim majority in Newfoundland and Labrador election","Q&A:
-    NIH Director Francis Collins on the battle to improve vaccine acceptance\u00a0
-    | TheHill","COVID-19\u2019s collateral damage: What happens when Canadians with
-    other illnesses miss out on medical care?","The economy needs the wealthy to
-    spend a lot more to get back on its feet","The economy needs the wealthy to spend
-    a lot more to get back on its feet","''A huge, huge toll'': For households reliant
-    on two incomes, Covid job loss changed everything","Here\u2019s why cassette
-    tape sales doubled during the pandemic","$15-an-Hour Minimum Wage Could Further
-    Sting Teen Employment","MLB''s opening day latest signal of American life returning
-    to normal","New Suez crisis: a global economy creaking under the strain","If
-    Peter Gutwein''s Liberals win the Tasmanian election, it would be the first time
-    the Liberals have won three elections in a row","Coronavirus in B.C.: Final case
+    in April ahead of Biden\u2019s climate summit","BlackRock hired me to make sustainable
+    investing mainstream. Now I realize it\u2019s a deadly distraction from the climate-change
+    threat","Climate change expected to make European hay fever seasons much worse"],"environment":["As
+    the Shift to Green Energy Speeds Up, Shell\u2019s Big Natural-Gas Bet Is at Risk"]},"healthcare_pandemic":{"healthcare":[],"pandemic":["Chinese
+    tourists discovered it, now locals are flocking to Sea Lake","Covid deaths top
+    300 for 1st time in 2021, cases at 163-day high","A 2nd pandemic-era Passover
+    prompts another round of adjusted seder plans | CBC News","Q&A: NIH Director
+    Francis Collins on the battle to improve vaccine acceptance\u00a0 | TheHill","COVID-19\u2019s
+    collateral damage: What happens when Canadians with other illnesses miss out
+    on medical care?","The economy needs the wealthy to spend a lot more to get back
+    on its feet","The economy needs the wealthy to spend a lot more to get back on
+    its feet","''A huge, huge toll'': For households reliant on two incomes, Covid
+    job loss changed everything","Here\u2019s why cassette tape sales doubled during
+    the pandemic","$15-an-Hour Minimum Wage Could Further Sting Teen Employment","MLB''s
+    opening day latest signal of American life returning to normal","New Suez crisis:
+    a global economy creaking under the strain","Coronavirus in B.C.: Final case
     update of the week coming from health officials","Jobkeeper payment: As the business
     lifeline ends, \u2018subsidy shame\u2019 catches on","Christian Porter Linda
     Reynolds: Scott Morrison faces tough post-pandemic reset","Actually, Covid Optimists
     and Pessimists Were Both Right","The Recovery Room: News beyond the pandemic
-    \u2014 March 26","Government must fight its way back on reform"]},"news_api":["Climate
-    talks will test Biden\u2019s pledge to make global heating a priority - The Guardian","Oregon
-    State\u2019s sizzling postseason continues, as Beavers reach Elite Eight with
-    a 65-58 win over Loyola of Ch - OregonLive","Suez canal blockage could intensify
+    \u2014 March 26","Government must fight its way back on reform","Tuberculosis
+    Australia: Silent pandemic the world is ignoring","Covid-19 news: UK scientists
+    warn cases are rising in children"]},"image_urls":["https://tarotscraper.herokuapp.com/static/0.png","https://tarotscraper.herokuapp.com/static/1.png","https://tarotscraper.herokuapp.com/static/2.png","https://tarotscraper.herokuapp.com/static/3.png","https://tarotscraper.herokuapp.com/static/4.png","https://tarotscraper.herokuapp.com/static/5.png","https://tarotscraper.herokuapp.com/static/6.png","https://tarotscraper.herokuapp.com/static/7.png","https://tarotscraper.herokuapp.com/static/8.png","https://tarotscraper.herokuapp.com/static/9.png","https://tarotscraper.herokuapp.com/static/10.png","https://tarotscraper.herokuapp.com/static/11.png","https://tarotscraper.herokuapp.com/static/12.png","https://tarotscraper.herokuapp.com/static/13.png","https://tarotscraper.herokuapp.com/static/14.png","https://tarotscraper.herokuapp.com/static/15.png","https://tarotscraper.herokuapp.com/static/16.png","https://tarotscraper.herokuapp.com/static/17.png","https://tarotscraper.herokuapp.com/static/18.png","https://tarotscraper.herokuapp.com/static/19.png","https://tarotscraper.herokuapp.com/static/0.png","https://tarotscraper.herokuapp.com/static/0.png","https://tarotscraper.herokuapp.com/static/1.png","https://tarotscraper.herokuapp.com/static/2.png","https://tarotscraper.herokuapp.com/static/3.png","https://tarotscraper.herokuapp.com/static/0.png","https://tarotscraper.herokuapp.com/static/1.png","https://tarotscraper.herokuapp.com/static/2.png","https://tarotscraper.herokuapp.com/static/3.png","https://tarotscraper.herokuapp.com/static/5.png","https://tarotscraper.herokuapp.com/static/0.png","https://tarotscraper.herokuapp.com/static/1.png","https://tarotscraper.herokuapp.com/static/2.png","https://tarotscraper.herokuapp.com/static/3.png","https://tarotscraper.herokuapp.com/static/4.png","https://tarotscraper.herokuapp.com/static/5.png","https://tarotscraper.herokuapp.com/static/1.png","https://tarotscraper.herokuapp.com/static/2.png","https://tarotscraper.herokuapp.com/static/3.png"],"news_api":["NFL
+    rumors: 49ers'' Jimmy Garoppolo commitment seen as bluff by teams - NBC Sports
+    Bay Area","Don\u2019t Miss the Next Full Moon: The Worm Moon (and, by Some Definitions,
+    a Supermoon) - SciTechDaily","Stock Market Selling Spree May Be a Hedge Fund
+    Liquidation - Business Insider","No. 1 Baylor storms back in second half to beat
+    No. 5 Villanova and advance to Elite Eight - Yahoo Sports","Mozambique insurgency:
+    Islamist militants ''ambush workers fleeing hotel'' - BBC News","No. 12 Oregon
+    State tops Loyola Chicago to make Elite Eight of NCAA men''s tournament - ESPN","''Bad
+    Girls Club'' Star Deshayla Harris Killed in Virginia Beach Shootings - TMZ","Hundreds
+    march in L.A.\u2019s Koreatown as part of ''Stop Asian Hate'' rallies across
+    the country - Los Angeles Times","UPDATE: Hostage situation at Oklahoma County
+    Detention Center over, officer taken to hospital, inmate shot and killed - KFOR
+    Oklahoma City","Krispy Kreme CEO defends free doughnuts offer to those vaccinated:
+    ''If folks don''t want to visit a donut shop, they don''t have to.'' - USA TODAY","Climate
+    talks will test Biden\u2019s pledge to make global heating a priority - The Guardian","New
+    Mexico rancher: Border crisis ''coming to a home near you'' - Fox News","Lava
+    Flows Again As Indonesian Volcano Erupts - NPR","Suez canal blockage could intensify
     shipping delays, lead to shortages of toilet paper, coffee and other consumer
-    goods - USA TODAY","Maine GOP rejects censure of Sen. Susan Collins after her
-    vote to convict Trump - CNN ","Woman accuses Harvey Weinstein of sexual assault,
-    attempted rape in new suit - NBC News","Police identify 2 victims fatally shot;
+    goods - USA TODAY","Republican senator Ted Cruz mocked for documentary-style
+    trip to US-Mexico border - The Guardian","Police identify 2 victims fatally shot;
     3 charged in connection with Virginia Beach Oceanfront shooting - WAVY.com","Texas
     COVID numbers decrease 17 days after mask, other restrictions lifted - Fox News","1
     in 6 Wisconsin residents fully vaccinated against COVID-19; deaths fall to average
     3 a day - WBAY","Woody Allen Interview From CBS News\u2019 \u2018Sunday Morning\u2019
-    Will Debut on Paramount Plus - Variety","Falcons looking more likely to trade
-    down from 4th overall pick after 49ers trade - The Falcoholic","China sanctions
-    wife of Joe Manchin, other US and Canadian officials | TheHill - The Hill","Dozens
-    Shot Dead in Myanmar as Military Continues Ruthless Campaign Against Civilians
-    - The Wall Street Journal","Hilary Duff gives birth to third child, her second
-    with husband Matthew Koma - Fox News","The disconnect between Y Combinator Demo
-    Day and due diligence - TechCrunch","Dozens unaccounted for in Mozambique after
-    Islamist attack, rights groups say - CNN ","After two months in office, Kamala
-    Harris is still living out of suitcases -- and she''s getting frustrated with
-    it - CNN ","UFC 260 card: Stipe Miocic vs Francis Ngannou 2 full fight preview
-    - MMA Mania","460 more COVID-19 cases, 27583 vaccinations reported Saturday in
-    Utah - KSL.com","Over 18,000 more people in Iowa complete vaccination, rate of
-    new cases continues increase - KCRG","Goldman Sold $10.5 Billion of Stocks in
-    Block-Trade Spree - Bloomberg"],"politics_protests_finance":{"finance":["Interactive
+    Will Debut on Paramount Plus - Variety","China sanctions wife of Joe Manchin,
+    other US and Canadian officials | TheHill - The Hill"],"politics_protests_finance":{"finance":["Interactive
     Brokers continues to push finance forward by building innovative trading and
     investments solutions. Move into the future with IBKR by opening your account
     today!","Gastar sem desperd\u00edcios: a realidade bate \u00e0 porta dos clubes
     de futebol | InfoMoney","Razer confirms plans to manufacture its smart RGB face
     mask | Engadget","Pr\u00e9carit\u00e9 \u00e9nerg\u00e9tique\u00a0: \u00abLes
     journ\u00e9es o\u00f9 il pleut tout le temps, c\u2019est un peu l\u2019enfer\u00bb","FP
-    Comment","Personal Finance"],"politics":["Will the 2014 midterms affect the 2016
-    presidential race?","Pete Buttigieg Floats ''Vehicle Miles'' Tax for Infrastructure
-    Spending Plan","How a $25 million donation for summer schools got ensnared in
-    San Francisco politics","Latest Quizzes","Congresswoman Nita Lowey: I am proud
-    to stand with Israel"],"protests":["Myanmar Forces Suppress Protests, Kill More
-    Than 100 People","Images From a \u2018Day of Shame\u2019 in Myanmar, With Scores
-    Shot Dead","Myanmar security forces kill at least 90 people"]},"worldometers":{"energy":{"oil_barrels":"92,856,832"},"food":{"died_of_hunger":"29,664","money_spent_on_obesity":"576,940,782","money_spent_on_weight_loss":"183,370,436"},"government_and_economics":{"education":"10,178,890,030","healthcare":"14,967,416,959","military":"4,556,453,779"},"health":{"abortions":"27488","accidents":"870","cancer_deaths":"5299","suicides":"691"}}}'
+    Comment","Personal Finance"],"politics":["Liberal MP Andrew Laming to quit politics
+    at next election, Josh Frydenberg says","Andrew Laming to quit politics at next
+    federal election over ''appalling'' behaviour towards women","Pete Buttigieg
+    Floats ''Vehicle Miles'' Tax for Infrastructure Spending Plan","How a $25 million
+    donation for summer schools got ensnared in San Francisco politics","Latest Quizzes","Congresswoman
+    Nita Lowey: I am proud to stand with Israel"],"protests":["Emotions come to the
+    surface in Ferguson after grand jury announcement","''Day of shame'' in Myanmar
+    as dozens of protesters killed | CBC News","Myanmar Forces Suppress Protests,
+    Kill More Than 100 People","Images From a \u2018Day of Shame\u2019 in Myanmar,
+    With Scores Shot Dead","Myanmar security forces kill at least 90 people","Myanmar
+    protests: Children among 106 killed as army opens fire"]},"worldometers":{"energy":{"oil_barrels":"5,344,200"},"food":{"died_of_hunger":"1,707","money_spent_on_obesity":"33,202,177","money_spent_on_weight_loss":"10,552,827"},"government_and_economics":{"education":"585,739,689","healthcare":"861,275,840","military":"262,203,120"},"health":{"abortions":"27516","accidents":"871","cancer_deaths":"5304","suicides":"692"}}}'
   _news: {fileID: 565176472}
 --- !u!4 &565176471
 Transform:
@@ -2652,14 +2656,14 @@ MonoBehaviour:
     _count: 0
   - _category: 2
     _worldometer: 7
-    _description: 'The number of documented suicides this year is '
+    _description: 'The number of documented suicides today is '
     _description2: .
     _count: 0
   - _category: 0
     _worldometer: 3
     _description: 'Weight loss programs are getting more attention. Only today Americans
       spent about '
-    _description2: ' dollars for this purpose.'
+    _description2: ' dollars for this purpose today.'
     _count: 0
   - _category: 0
     _worldometer: 4
@@ -2670,7 +2674,7 @@ MonoBehaviour:
   - _category: 0
     _worldometer: 6
     _description: Public world military expenditure is estimated at
-    _description2: ' dollars. '
+    _description2: ' dollars today. '
     _count: 0
   - _category: 1
     _worldometer: 0
@@ -2679,19 +2683,19 @@ MonoBehaviour:
     _count: 0
   - _category: 1
     _worldometer: 9
-    _description: 'Road traffic accident fatalities this year - '
+    _description: 'Road traffic accident fatalities today - '
     _description2: .
     _count: 0
   - _category: 2
     _worldometer: 10
-    _description: Documented abortions this year are estimated at
+    _description: Documented abortions today are estimated at
     _description2: .
     _count: 0
   - _category: 1
     _worldometer: 8
-    _description: 'Bad living conditions and growing industry is taking its toll.
-      For now '
-    _description2: ) people died because of cancer.
+    _description: Bad living conditions and growing industry is taking its toll.
+      Today
+    _description2: ' people died because of cancer.'
     _count: 0
   - _category: 2
     _worldometer: 2
@@ -2701,7 +2705,7 @@ MonoBehaviour:
   - _category: 0
     _worldometer: 1
     _description: 'Social inequalities deepens. '
-    _description2: ' people died of hunger.'
+    _description2: ' people died of hunger today.'
     _count: 0
   _plainNews: []
 --- !u!1 &921455780
