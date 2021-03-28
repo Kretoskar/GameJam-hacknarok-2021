@@ -19,4 +19,14 @@ public class CardDrawerToDeck : MonoBehaviour
         
         transform.DOMove(transform.position - new Vector3(0,10,0), _drawSingleCardTime);
     }
+
+    private void OnMouseOver()
+    {
+        transform.localScale = Vector3.one * 1.1f;
+    }
+
+    private void OnMouseExit()
+    {
+        transform.localScale = Vector3.one;
+    }
 }
