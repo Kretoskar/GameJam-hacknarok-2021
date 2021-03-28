@@ -10,6 +10,7 @@ public class News : MonoBehaviour
     [SerializeField] private List<Sprite> _newsSprites = new List<Sprite>();
     [SerializeField] private List<NewsInfo> _newsInfos;
     [SerializeField] private List<string> _plainNews = new List<string>();
+    [SerializeField] private GameData _gameData = null;
 
     private List<NewsInfo> _pickedNewsInfos = new List<NewsInfo>();
     private List<string> _pickedPlainNews = new List<string>();
@@ -32,6 +33,29 @@ public class News : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        SetValues();
+    }
+
+    private void SetValues()
+    {
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.PoliticsProtestsFinances))
+        {
+            newsInfo.Count += _gameData.PoliticsChange;
+        }
+        
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.EnvironmentClimateChange))
+        {
+            newsInfo.Count += _gameData.EnviroChange;
+        }
+        
+        foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.HealthcarePandemic))
+        {
+            newsInfo.Count += _gameData.HealthCareChange;
+        }
+    }
+    
     public void ChangeValues(int politics, int enviro, int healthCare)
     {
         if(_pickedNewsInfos.Count == 0)
@@ -40,16 +64,19 @@ public class News : MonoBehaviour
         foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.PoliticsProtestsFinances))
         {
             newsInfo.Count += politics * 10;
+            _gameData.PoliticsChange += politics * 10;
         }
         
         foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.EnvironmentClimateChange))
         {
             newsInfo.Count += enviro * 10;
+            _gameData.EnviroChange += enviro * 10;
         }
         
         foreach (var newsInfo in _pickedNewsInfos.Where(n => n.Category == Category.HealthcarePandemic))
         {
             newsInfo.Count += healthCare * 10;
+            _gameData.HealthCareChange += healthCare * 10;
         }
     }
     
