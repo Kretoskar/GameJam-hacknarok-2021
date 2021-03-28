@@ -9,7 +9,10 @@ public class NewsController : MonoBehaviour
 {
     [SerializeField] private string _mock;
     [SerializeField] private News _news;
-    
+    public Texture img;
+    public Sprite sprite;
+    public List<Sprite> spriteList;
+
     private Root _root;
     
     private void Start()
@@ -37,8 +40,14 @@ public class NewsController : MonoBehaviour
         }
         
         _root = JsonConvert.DeserializeObject<Root>(response);
+        //SetValues();
+        Debug.Log(_root.image_urls.Count);
+        foreach(var url in _root.image_urls)
+        {
+            StartCoroutine(DownloadImage(url));
+        }
         
-        SetValues(); 
+       
     }
 
     private void SetValues()
@@ -59,5 +68,20 @@ public class NewsController : MonoBehaviour
         {
             _news.PlainNews.Add(s);   
         }
+    }
+
+    IEnumerator DownloadImage(string MediaUrl)
+    {
+        UnityWebRequest request = UnityWebRequestTexture.GetTexture(MediaUrl);
+        yield return request.SendWebRequest();
+        if (request.isNetworkError || request.isHttpError)
+            Debug.Log(request.error);
+        else
+        {
+            img = ((DownloadHandlerTexture)request.downloadHandler).texture;
+            sprite = Sprite.Create((Texture2D)img, new Rect(0, 0, img.width, img.height), Vector2.zero);
+            spriteList.Add(sprite);
+        }
+
     }
 }
