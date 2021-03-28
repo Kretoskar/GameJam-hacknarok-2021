@@ -29,7 +29,7 @@ public class CardDrawerToDeckManager : MonoBehaviour
     
     private IEnumerator SpawnCoroutine()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 8; i++)
         {
             GameObject spawnedCard = Instantiate(_cardsToSpawn[i].gameObject, _spawnPoint);
 
@@ -47,7 +47,7 @@ public class CardDrawerToDeckManager : MonoBehaviour
 
         List<int> choosenIndexes = new List<int>();
         
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 8; i++)
         {
             int index;
             
