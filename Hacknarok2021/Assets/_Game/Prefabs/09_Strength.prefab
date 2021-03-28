@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 1901642757701728879}
   - component: {fileID: 1372327000741669725}
   m_Layer: 0
-  m_Name: 09_Justice
+  m_Name: 09_Strength
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canBeUpsideDown: 1
-  _cardType: 5
+  _cardType: 11
   _description: POSITIVE SPRITUALITY.
   _upsideDownDescription: FANATACISM. NO FORGIVENESS.
   _descriptionText: {fileID: 1204522614723941036}

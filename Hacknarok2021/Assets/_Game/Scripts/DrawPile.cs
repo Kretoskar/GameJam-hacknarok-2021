@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
@@ -47,11 +48,35 @@ public class DrawPile : MonoBehaviour
 
     private void GetRandomCards()
     {
+        List<CardType> symbols = new List<CardType>();
+        
         for (int i = 0; i < _cardsOnHandCount; i++)
         {
-            int rand = UnityEngine.Random.Range(0, _availableCards.Count);
-            _cardsOnHand.Add(_availableCards[rand]);
-            _availableCards.RemoveAt(rand);
+            if (!_gameData.WasSleeping)
+            {
+                int rand = UnityEngine.Random.Range(0, _availableCards.Count);
+                _cardsOnHand.Add(_availableCards[rand]);
+                _availableCards.RemoveAt(rand);
+            }
+            else
+            {
+                int rand;
+                CardType symbol;
+
+                while (true)
+                {
+                    rand = UnityEngine.Random.Range(0, _gameData.AvailableCards.Count);
+                    symbol = _gameData.AvailableCards[rand];
+
+                    if (symbols.Contains(symbol)) continue;
+                    
+                    symbols.Add(symbol);
+                    break;
+                }
+                
+                _cardsOnHand.Add(_availableCards.First(c => c.GetComponent<CardInfo>().CardType == symbol));
+                _availableCards.RemoveAll(c => c.GetComponent<CardInfo>().CardType == symbol);
+            }
         }
     }
 }

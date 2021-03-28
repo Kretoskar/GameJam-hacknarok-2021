@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canBeUpsideDown: 1
-  _cardType: 5
+  _cardType: 20
   _description: POSITIVE SPRITUALITY.
   _upsideDownDescription: FANATACISM. NO FORGIVENESS.
   _descriptionText: {fileID: 1204522614723941036}

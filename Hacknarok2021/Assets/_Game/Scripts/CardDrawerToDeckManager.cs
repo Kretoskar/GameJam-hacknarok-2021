@@ -70,7 +70,7 @@ public class CardDrawerToDeckManager : MonoBehaviour
     {
         _draws++;
         
-        if(_draws >= 2)
+        if(_draws >= 4)
             StartCoroutine(LoadNextSceneCoroutine());
     }
 
