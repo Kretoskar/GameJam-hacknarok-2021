@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -7,6 +8,7 @@ using UnityEngine.Networking;
 public class NewsController : MonoBehaviour
 {
     [SerializeField] private string _mock;
+    [SerializeField] private News _news;
     
     private Root _root;
     
@@ -35,6 +37,27 @@ public class NewsController : MonoBehaviour
         }
         
         _root = JsonConvert.DeserializeObject<Root>(response);
-        Debug.Log(_root.worldometers.food.died_of_hunger);
+        
+        SetValues(); 
+    }
+
+    private void SetValues()
+    {
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Accidents).Count = long.Parse(_root.worldometers.health.accidents.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Abortions).Count = long.Parse(_root.worldometers.health.abortions.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Education).Count = long.Parse(_root.worldometers.government_and_economics.education.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Healthcare).Count = long.Parse(_root.worldometers.government_and_economics.healthcare.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Military).Count = long.Parse(_root.worldometers.government_and_economics.military.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.Suicides).Count = long.Parse(_root.worldometers.health.suicides.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.CancerDeaths).Count = long.Parse(_root.worldometers.health.cancer_deaths.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.OilBarrls).Count = long.Parse(_root.worldometers.energy.oil_barrels.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.DiedOfHunger).Count = long.Parse(_root.worldometers.food.died_of_hunger.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.MoneySpentOnObesity).Count = long.Parse(_root.worldometers.food.money_spent_on_obesity.Replace("," , ""));
+        _news.NewsInfos.First(n => n.Worldometer == Worldometer.MoneySpentOnWeightLoss).Count = long.Parse(_root.worldometers.food.money_spent_on_weight_loss.Replace("," , ""));
+        
+        foreach (var s in _root.news_api)
+        {
+            _news.PlainNews.Add(s);   
+        }
     }
 }

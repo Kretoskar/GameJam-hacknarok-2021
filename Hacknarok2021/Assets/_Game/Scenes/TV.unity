@@ -2005,6 +2005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245274374}
   - component: {fileID: 245274373}
+  - component: {fileID: 245274375}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -2077,6 +2078,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &245274375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245274372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37fab45b809b5804299bf343177c8564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
+  _maxMove: 9
 --- !u!1 &305524809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,6 +2533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565176471}
   - component: {fileID: 565176470}
+  - component: {fileID: 565176472}
   m_Layer: 0
   m_Name: News controller
   m_TagString: Untagged
@@ -2537,69 +2553,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f058d173976be944c9625c9733317190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mock: '{"environment_climate_change":{"climate_change":["John Kerry to visit India
+  _mock: '{"environment_climate_change":{"climate_change":["Climate talks will test
+    Biden\u2019s pledge to make global heating a priority","John Kerry to visit India
     in April ahead of Biden\u2019s climate summit","Climate change expected to make
     European hay fever seasons much worse"],"environment":["As the Shift to Green
-    Energy Speeds Up, Shell\u2019s Big Natural-Gas Bet Is at Risk"]},"healthcare_pandemic":{"healthcare":[],"pandemic":["A
+    Energy Speeds Up, Shell\u2019s Big Natural-Gas Bet Is at Risk"]},"healthcare_pandemic":{"healthcare":[],"pandemic":["WA
+    has a new pandemic playbook, and many elements have taken authorities by surprise","A
     2nd pandemic-era Passover prompts another round of adjusted seder plans | CBC
-    News","Q&A: NIH Director Francis Collins on the battle to improve vaccine acceptance\u00a0
+    News","Mumbai Reports 6,123 Covid Cases In Highest Ever One-Day Spike","Liberals
+    under Andrew Furey win slim majority in Newfoundland and Labrador election","Q&A:
+    NIH Director Francis Collins on the battle to improve vaccine acceptance\u00a0
     | TheHill","COVID-19\u2019s collateral damage: What happens when Canadians with
     other illnesses miss out on medical care?","The economy needs the wealthy to
     spend a lot more to get back on its feet","The economy needs the wealthy to spend
     a lot more to get back on its feet","''A huge, huge toll'': For households reliant
-    on two incomes, Covid job loss changed everything","\u2018Are we going to be
-    able to pull this off?\u2019: How the Bank of Canada doused a financial fire
-    last spring","Here\u2019s why cassette tape sales doubled during the pandemic","$15-an-Hour
-    Minimum Wage Could Further Sting Teen Employment","MLB''s opening day latest
-    signal of American life returning to normal","Julius'' Bar, site of historic
-    gay ''sip-in,'' threatened by pandemic","What elements of pandemic life are here
-    to stay?","New Suez crisis: a global economy creaking under the strain","Fed\u2019s
-    Patrick Harker says he wants to \u2018hold steady\u2019 until U.S. gets through
-    pandemic","Coronavirus in B.C.: Final case update of the week coming from health
-    officials","Jobkeeper payment: As the business lifeline ends, \u2018subsidy shame\u2019
-    catches on","Christian Porter Linda Reynolds: Scott Morrison faces tough post-pandemic
-    reset","Actually, Covid Optimists and Pessimists Were Both Right","The Recovery
-    Room: News beyond the pandemic \u2014 March 26","How Ontario and Quebec set the
-    stage for Ottawa\u2019s first pandemic-era budget"]},"news_api":["Oregon State
-    Beavers lead Loyola Chicago in 2nd half: Live updates from men\u2019s NCAA Tournament
-    Sweet 16 - OregonLive","Police identify 2 victims fatally shot; 3 charged in
-    connection with Virginia Beach Oceanfront shooting - WAVY.com","Trump had an
-    ''Apprentice''-like meeting with Ohio GOP Senate candidates at West Palm Beach
-    golf club: report - Business Insider","Woody Allen Interview From CBS News\u2019
-    \u2018Sunday Morning\u2019 Will Debut on Paramount Plus - Variety","China sanctions
-    wife of Joe Manchin, other US and Canadian officials | TheHill - The Hill","Amazon
-    aware that workers allegedly pee in water bottles, documents show; company pushes
-    back - Fox Business","Dozens Shot Dead in Myanmar as Military Continues Ruthless
-    Campaign Against Civilians - The Wall Street Journal","Hilary Duff gives birth
-    to third child, her second with husband Matthew Koma - Fox News","Dozens unaccounted
-    for in Mozambique after Islamist attack, rights groups say - CNN ","Collins avoids
-    state-party censure after voting to convict Trump - POLITICO","After two months
-    in office, Kamala Harris is still living out of suitcases -- and she''s getting
-    frustrated with it - CNN ","Asian American official condemns anti-Asian violence
-    by removing shirt, showing his military scars: \u2018Is this patriot enough?\u2019
-    - The Washington Post","Biden says Justice Department is \"taking a look\" at
-    Georgia elections law - CBS News","Goldman Sold $10.5 Billion of Stocks in Block-Trade
-    Spree - Yahoo Finance","Patriots planning to trade up for quarterback or acquire
-    Jimmy Garoppolo after draft-pick swaps, per report - CBS Sports","IDPH reports
-    8 additional COVID-19 deaths - KCCI Des Moines","Krispy Kreme faces backlash
-    for free doughnuts for vaccinated people - TODAY","NASA Analysis: Earth Is Safe
-    From Asteroid Apophis Impact for at Least 100 Years - SciTechDaily","A rare clotting
-    disorder may cloud the world''s hopes for AstraZeneca''s COVID-19 vaccine - Science
-    Magazine","Early studies: Antidepressant helping with COVID-19 recovery - KSL.com"],"politics_protests_finance":{"finance":["Interactive
+    on two incomes, Covid job loss changed everything","Here\u2019s why cassette
+    tape sales doubled during the pandemic","$15-an-Hour Minimum Wage Could Further
+    Sting Teen Employment","MLB''s opening day latest signal of American life returning
+    to normal","New Suez crisis: a global economy creaking under the strain","If
+    Peter Gutwein''s Liberals win the Tasmanian election, it would be the first time
+    the Liberals have won three elections in a row","Coronavirus in B.C.: Final case
+    update of the week coming from health officials","Jobkeeper payment: As the business
+    lifeline ends, \u2018subsidy shame\u2019 catches on","Christian Porter Linda
+    Reynolds: Scott Morrison faces tough post-pandemic reset","Actually, Covid Optimists
+    and Pessimists Were Both Right","The Recovery Room: News beyond the pandemic
+    \u2014 March 26","Government must fight its way back on reform"]},"news_api":["Climate
+    talks will test Biden\u2019s pledge to make global heating a priority - The Guardian","Oregon
+    State\u2019s sizzling postseason continues, as Beavers reach Elite Eight with
+    a 65-58 win over Loyola of Ch - OregonLive","Suez canal blockage could intensify
+    shipping delays, lead to shortages of toilet paper, coffee and other consumer
+    goods - USA TODAY","Maine GOP rejects censure of Sen. Susan Collins after her
+    vote to convict Trump - CNN ","Woman accuses Harvey Weinstein of sexual assault,
+    attempted rape in new suit - NBC News","Police identify 2 victims fatally shot;
+    3 charged in connection with Virginia Beach Oceanfront shooting - WAVY.com","Texas
+    COVID numbers decrease 17 days after mask, other restrictions lifted - Fox News","1
+    in 6 Wisconsin residents fully vaccinated against COVID-19; deaths fall to average
+    3 a day - WBAY","Woody Allen Interview From CBS News\u2019 \u2018Sunday Morning\u2019
+    Will Debut on Paramount Plus - Variety","Falcons looking more likely to trade
+    down from 4th overall pick after 49ers trade - The Falcoholic","China sanctions
+    wife of Joe Manchin, other US and Canadian officials | TheHill - The Hill","Dozens
+    Shot Dead in Myanmar as Military Continues Ruthless Campaign Against Civilians
+    - The Wall Street Journal","Hilary Duff gives birth to third child, her second
+    with husband Matthew Koma - Fox News","The disconnect between Y Combinator Demo
+    Day and due diligence - TechCrunch","Dozens unaccounted for in Mozambique after
+    Islamist attack, rights groups say - CNN ","After two months in office, Kamala
+    Harris is still living out of suitcases -- and she''s getting frustrated with
+    it - CNN ","UFC 260 card: Stipe Miocic vs Francis Ngannou 2 full fight preview
+    - MMA Mania","460 more COVID-19 cases, 27583 vaccinations reported Saturday in
+    Utah - KSL.com","Over 18,000 more people in Iowa complete vaccination, rate of
+    new cases continues increase - KCRG","Goldman Sold $10.5 Billion of Stocks in
+    Block-Trade Spree - Bloomberg"],"politics_protests_finance":{"finance":["Interactive
     Brokers continues to push finance forward by building innovative trading and
     investments solutions. Move into the future with IBKR by opening your account
     today!","Gastar sem desperd\u00edcios: a realidade bate \u00e0 porta dos clubes
     de futebol | InfoMoney","Razer confirms plans to manufacture its smart RGB face
     mask | Engadget","Pr\u00e9carit\u00e9 \u00e9nerg\u00e9tique\u00a0: \u00abLes
     journ\u00e9es o\u00f9 il pleut tout le temps, c\u2019est un peu l\u2019enfer\u00bb","FP
-    Comment","Personal Finance"],"politics":["Pete Buttigieg Floats ''Vehicle Miles''
-    Tax for Infrastructure Spending Plan","How a $25 million donation for summer
-    schools got ensnared in San Francisco politics","Latest Quizzes","Congresswoman
-    Nita Lowey: I am proud to stand with Israel"],"protests":["Protesters demand
-    justice for 43 missing Mexican students","Myanmar Forces Suppress Protests, Kill
-    More Than 100 People","Myanmar protests: More than 100 killed as Dominic Raab
-    condemns \u2018new low\u2019 from military","Myanmar security forces kill at
-    least 90 people"]},"worldometers":{"energy":{"oil_barrels":"84,596,659"},"food":{"died_of_hunger":"27,025","money_spent_on_obesity":"525,614,481","money_spent_on_weight_loss":"167,058,780"},"government_and_economics":{"education":"9,273,370,493","healthcare":"13,635,873,153","military":"4,151,134,755"},"health":{"abortions":"27461","accidents":"870","cancer_deaths":"5293","suicides":"691"}}}'
+    Comment","Personal Finance"],"politics":["Will the 2014 midterms affect the 2016
+    presidential race?","Pete Buttigieg Floats ''Vehicle Miles'' Tax for Infrastructure
+    Spending Plan","How a $25 million donation for summer schools got ensnared in
+    San Francisco politics","Latest Quizzes","Congresswoman Nita Lowey: I am proud
+    to stand with Israel"],"protests":["Myanmar Forces Suppress Protests, Kill More
+    Than 100 People","Images From a \u2018Day of Shame\u2019 in Myanmar, With Scores
+    Shot Dead","Myanmar security forces kill at least 90 people"]},"worldometers":{"energy":{"oil_barrels":"92,856,832"},"food":{"died_of_hunger":"29,664","money_spent_on_obesity":"576,940,782","money_spent_on_weight_loss":"183,370,436"},"government_and_economics":{"education":"10,178,890,030","healthcare":"14,967,416,959","military":"4,556,453,779"},"health":{"abortions":"27488","accidents":"870","cancer_deaths":"5299","suicides":"691"}}}'
+  _news: {fileID: 565176472}
 --- !u!4 &565176471
 Transform:
   m_ObjectHideFlags: 0
@@ -2614,6 +2631,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565176472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565176469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6969805001ac5714296574efc3ce76cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _newsInfos:
+  - _category: 0
+    _worldometer: 5
+    _description: 
+    _count: 0
+  - _category: 2
+    _worldometer: 7
+    _description: 
+    _count: 0
+  - _category: 0
+    _worldometer: 3
+    _description: 
+    _count: 0
+  - _category: 0
+    _worldometer: 4
+    _description: 
+    _count: 0
+  - _category: 0
+    _worldometer: 6
+    _description: 
+    _count: 0
+  - _category: 1
+    _worldometer: 0
+    _description: 
+    _count: 0
+  - _category: 1
+    _worldometer: 9
+    _description: 
+    _count: 0
+  - _category: 2
+    _worldometer: 10
+    _description: 
+    _count: 0
+  - _category: 2
+    _worldometer: 8
+    _description: 
+    _count: 0
+  - _category: 2
+    _worldometer: 2
+    _description: 
+    _count: 0
+  - _category: 0
+    _worldometer: 1
+    _description: 
+    _count: 0
 --- !u!1 &921455780
 GameObject:
   m_ObjectHideFlags: 0
