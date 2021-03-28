@@ -37,6 +37,11 @@ public class GameData : ScriptableObject
     private void OnEnable()
     {
         _cardsLeft = Enum.GetValues(typeof(CardType)).Cast<CardType>().ToList();
+        _availableCards = new List<CardType>();
+        PoliticsChange = 0;
+        EnviroChange = 0;
+        HealthCareChange = 0;
+        _wasSleeping = false;
     }
     
     public bool WasSleeping
