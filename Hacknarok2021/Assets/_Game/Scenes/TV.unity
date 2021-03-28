@@ -2646,48 +2646,64 @@ MonoBehaviour:
   _newsInfos:
   - _category: 0
     _worldometer: 5
-    _description: 
+    _description: healthcare spendings; Recent healthcare expenses are estimated
+      at
+    _description2: . Too much or too less?
     _count: 0
   - _category: 2
     _worldometer: 7
-    _description: 
+    _description: 'The number of documented suicides this year is '
+    _description2: .
     _count: 0
   - _category: 0
     _worldometer: 3
-    _description: 
+    _description: 'Weight loss programs are getting more attention. Only today Americans
+      spent about '
+    _description2: ' dollars for this purpose.'
     _count: 0
   - _category: 0
     _worldometer: 4
-    _description: 
+    _description: Public spending on education in the world is around 5% of global
+      GDP. Only today it's estimated at
+    _description2: .
     _count: 0
   - _category: 0
     _worldometer: 6
-    _description: 
+    _description: Public world military expenditure is estimated at
+    _description2: ' dollars. '
     _count: 0
   - _category: 1
     _worldometer: 0
-    _description: 
+    _description: World oil stocks are dwindling every day. We have
+    _description2: ' barrels left. '
     _count: 0
   - _category: 1
     _worldometer: 9
-    _description: 
+    _description: 'Road traffic accident fatalities this year - '
+    _description2: .
     _count: 0
   - _category: 2
     _worldometer: 10
-    _description: 
+    _description: Documented abortions this year are estimated at
+    _description2: .
     _count: 0
-  - _category: 2
+  - _category: 1
     _worldometer: 8
-    _description: 
+    _description: 'Bad living conditions and growing industry is taking its toll.
+      For now '
+    _description2: ) people died because of cancer.
     _count: 0
   - _category: 2
     _worldometer: 2
-    _description: 
+    _description: 'Money spent for obesity related diseases in the USA today - '
+    _description2: .
     _count: 0
   - _category: 0
     _worldometer: 1
-    _description: 
+    _description: 'Social inequalities deepens. '
+    _description2: ' people died of hunger.'
     _count: 0
+  _plainNews: []
 --- !u!1 &921455780
 GameObject:
   m_ObjectHideFlags: 0

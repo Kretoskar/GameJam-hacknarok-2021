@@ -32,8 +32,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -60, y: -4.436}
-  m_SizeDelta: {x: 100.03139, y: 0.9877119}
+  m_AnchoredPosition: {x: -71.5, y: -4.436}
+  m_SizeDelta: {x: 123.89133, y: 0.9877119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7324804019596634295
 GameObject:
@@ -886,8 +886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.1, y: -4.436}
-  m_SizeDelta: {x: 100.03139, y: 0.9877119}
+  m_AnchoredPosition: {x: 72.03, y: -4.436}
+  m_SizeDelta: {x: 123.89133, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7324804020410030881
 MeshRenderer:
@@ -963,11 +963,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nie b\u0119dziesz ty kurwo robi\u0142 ludziom tego co robisz. Ty w dup\u0119
-    kurwo jebana ty, ci\u0119 kurwo z\u0142api\u0119, ale na pocz\u0105tek jad\u0119
-    star\u0105 kurwa Ziobrow\u0105 tak kurwa napadn\u0119 ty w dup\u0119 jebany pedale
-    jak ty mnie. Ty kurwo jebana pierdolona, wy pisowskie \u015Bmiecie, w kurw\u0119
-    jebane wy! Ja wam kurwy dam!"
+  m_text: 'Bad living conditions and growing industry is taking its toll. For now 
+    5299) people died because of cancer.        |        Hilary Duff gives birth
+    to third child, her second with husband Matthew Koma - Fox News        |       
+    Road traffic accident fatalities this year -  870.        |        Suez canal
+    blockage could intensify shipping delays, lead to shortages of toilet paper,
+    coffee and other consumer goods - USA TODAY        |        The number of documented
+    suicides this year is  691.        |        460 more COVID-19 cases, 27583 vaccinations
+    reported Saturday in Utah - KSL.com        |        '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -995,18 +998,18 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 7.3
+  m_fontSize: 4.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 10
   m_fontStyle: 1
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
-  m_lineSpacingMax: 0
+  m_lineSpacingMax: -100
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
@@ -1036,14 +1039,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 7324804020410030882}
-    characterCount: 280
+    characterCount: 609
     spriteCount: 0
-    spaceCount: 50
-    wordCount: 51
+    spaceCount: 177
+    wordCount: 85
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1103,8 +1106,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.1, y: -4.436}
-  m_SizeDelta: {x: 100.03139, y: 0.9877119}
+  m_AnchoredPosition: {x: 72.03, y: -4.436}
+  m_SizeDelta: {x: 123.89133, y: 0.9877119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7324804020657914382
 GameObject:

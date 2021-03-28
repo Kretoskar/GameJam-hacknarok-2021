@@ -86,7 +86,7 @@ public class NewsInfo
         set => _worldometer = value;
     }
 
-    public string Description => _description + " " + _count + " " + _description2;
+    public string Description => _description + " " + _count + _description2;
     
     public long Count
     {
