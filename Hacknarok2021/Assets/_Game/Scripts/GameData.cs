@@ -11,6 +11,8 @@ public class GameData : ScriptableObject
     [SerializeField] private List<CardType> _cardsLeft = null;
     [SerializeField] private List<CardType> _availableCards = new List<CardType>();
 
+    public List<CardType> CardsLeft => _cardsLeft;
+    
     private void OnEnable()
     {
         _cardsLeft = Enum.GetValues(typeof(CardType)).Cast<CardType>().ToList();

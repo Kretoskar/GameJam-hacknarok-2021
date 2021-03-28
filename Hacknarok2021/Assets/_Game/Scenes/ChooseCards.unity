@@ -121,6 +121,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &607396205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607396206}
+  - component: {fileID: 607396207}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607396206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607396205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &607396207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607396205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12c2aae09c8822428025eb46f522698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allCardDrawersToDeck:
+  - {fileID: 7392496818567030557, guid: 94b2fe1940dcd4d4eba64334adcec154, type: 3}
+  - {fileID: 7392496818567030557, guid: aac8ce1d58e69764f9dc3a0f53f3323c, type: 3}
+  - {fileID: 7392496818567030557, guid: c7ac287865508d84eb0981608d29836e, type: 3}
+  - {fileID: 7392496818567030557, guid: 5a792b5c22c857e4aae23aa00d18c05b, type: 3}
+  - {fileID: 7392496818567030557, guid: 329eb3cc43e4eb0468146b28419eb0d1, type: 3}
+  - {fileID: 7392496818567030557, guid: 1550e5f07bb3a0c4c81275d3a475e0d5, type: 3}
+  - {fileID: 7392496818567030557, guid: ddb433e44a039db4895a1bc508a737de, type: 3}
+  - {fileID: 7392496818567030557, guid: 0c49a8f1514a8e14b8bae10ace4481dd, type: 3}
+  - {fileID: 7392496818567030557, guid: d83471cdcce7f21449a57f4318085582, type: 3}
+  - {fileID: 7392496818567030557, guid: 0bba9954834b7374d9363e113327bcb0, type: 3}
+  - {fileID: 7392496818567030557, guid: 993f249f196913340851b994c4ab3fb1, type: 3}
+  - {fileID: 7392496818567030557, guid: 78dbb0e49570da14bb670339f2eff306, type: 3}
+  - {fileID: 7392496818567030557, guid: 92b8d8cd715de124297ddb8229b7fd72, type: 3}
+  - {fileID: 7392496818567030557, guid: 1758a8c4e4cbb71448745687c5c8763d, type: 3}
+  - {fileID: 7392496818567030557, guid: 1f5e8dcc87a72a44b9f42d501d5e1261, type: 3}
+  - {fileID: 7392496818567030557, guid: 7132083c508b05e44a85de0a82a59d91, type: 3}
+  - {fileID: 7392496818567030557, guid: cf18286702e4c784ebad5e9ff9f87467, type: 3}
+  - {fileID: 7392496818567030557, guid: 6514343d0fc7b6741bf6e1d1fc6632fb, type: 3}
+  - {fileID: 7392496818567030557, guid: 6c2d5eca41fe8484e9216832687af1a1, type: 3}
+  - {fileID: 7392496818567030557, guid: bb2e995f40ea04d4f9f1080dc97829e6, type: 3}
+  - {fileID: 7392496818567030557, guid: 7e02b8aee76435144b8975aaa89ac3f1, type: 3}
+  - {fileID: 7392496818567030557, guid: 613874d4a946ec142b46d35efa1cb264, type: 3}
+  _gameData: {fileID: 11400000, guid: 8396346224de1364fa055a0e2c49a05c, type: 2}
+  _spawnPoint: {fileID: 607396206}
+  _cardTweens:
+  - {fileID: 814692722278894855}
+  - {fileID: 2379008449434653142}
+  - {fileID: 6130191576879933396}
+  - {fileID: 5362023567495403531}
+  _drawSingleCardTime: 0.5
 --- !u!1 &921828413
 GameObject:
   m_ObjectHideFlags: 0
