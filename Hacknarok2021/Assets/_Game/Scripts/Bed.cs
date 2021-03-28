@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bed : MonoBehaviour
 {
@@ -26,5 +27,13 @@ public class Bed : MonoBehaviour
         }
         
         _news.ChangeValues(politics, enviro, healthcare);
+
+        StartCoroutine(LoadNextSceneCoroutine());
+    }
+
+    private IEnumerator LoadNextSceneCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(1);
     }
 }

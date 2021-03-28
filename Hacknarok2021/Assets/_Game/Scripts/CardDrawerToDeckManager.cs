@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardDrawerToDeckManager : MonoBehaviour
 {
@@ -44,9 +45,23 @@ public class CardDrawerToDeckManager : MonoBehaviour
     {
         _cardsToSpawn = new List<CardDrawerToDeck>();
 
+        List<int> choosenIndexes = new List<int>();
+        
         for (int i = 0; i < 4; i++)
         {
-            CardType type = _gameData.CardsLeft[UnityEngine.Random.Range(0, _gameData.CardsLeft.Count)];
+            int index;
+            
+            while (true)
+            {
+                index = UnityEngine.Random.Range(0, _gameData.CardsLeft.Count);
+                if (!choosenIndexes.Contains(index))
+                {
+                    choosenIndexes.Add(index);
+                    break;
+                }
+            }
+
+            CardType type = _gameData.CardsLeft[index];
             _cardsToSpawn.Add(_allCardDrawersToDeck.First(cd => cd.CardType == type));
         }
     }
@@ -56,6 +71,12 @@ public class CardDrawerToDeckManager : MonoBehaviour
         _draws++;
         
         if(_draws >= 2)
-            Debug.Log("enough");
+            StartCoroutine(LoadNextSceneCoroutine());
+    }
+
+    private IEnumerator LoadNextSceneCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(0);
     }
 }
